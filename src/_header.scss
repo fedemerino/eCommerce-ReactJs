@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+a{
+    text-decoration: none !important;
+    color:black !important;
+    font-weight: 500;
+}
+
+a:hover{
+    text-decoration: underline !important;
+}
+.navBar{
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    align-items: center;
+    background-color: rgba($color: #57555541, $alpha: 0.3);
+    img{
+        width: 10rem;
+        height: 10rem;
+    }
+}
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

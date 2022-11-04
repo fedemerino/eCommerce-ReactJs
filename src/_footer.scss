@@ -1,0 +1,21 @@
+.footer{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 12vh;
+    background-color: #183642;
+}
+.footer p{
+    margin-top: 1rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+.footer div img{
+    width: 2rem;
+    height: 2rem;
+    margin-bottom: 1rem;
+}

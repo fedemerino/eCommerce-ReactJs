@@ -4,18 +4,22 @@ import ItemListContainer from "./components/ItemListContainer";
 import Footer from "./components/Footer";
 import Main from "./components/Main";
 import { BrowserRouter} from "react-router-dom"
+import { ToastContainer } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
+
+
 function App() {
     return (
 
         <>
-            <BrowserRouter>
+            <BrowserRouter basename="/">
                 <NavBar />
                 <Main />
-            </BrowserRouter>   
+                <ToastContainer />
+                </BrowserRouter>   
                 <Footer />
         </>
-    )
-        ;
+    );
 }
 
 export default App;

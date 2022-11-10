@@ -1,8 +1,8 @@
-.text{
+.text {
     text-align: center;
 }
 
-*{
+* {
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
     margin: 0;
@@ -10,27 +10,32 @@
     box-sizing: border-box;
     list-style-type: none;
 }
-a{
+
+main {
+    margin-left: 3%;
+}
+
+a {
     font-family: 'Roboto', sans-serif;
     text-decoration: none;
-    color:whitesmoke;
+    color: whitesmoke;
     font-weight: 600;
 }
 
-a:hover{
-    color:whitesmoke;
+a:hover {
+    color: whitesmoke;
     text-decoration: underline;
 }
 
-a:visited{
+a:visited {
     text-decoration: none;
 }
 
-a:link{
+a:link {
     text-decoration: none;
 }
 
-.detalles{
+.detalles {
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
     color: black;
@@ -43,14 +48,15 @@ a:link{
     background-color: rgba(128, 128, 128, 0.644);
 }
 
-.cardContainer{
-    display:flex;
+.cardContainer {
+    display: flex;
     flex-direction: row;
     gap: 3rem;
     justify-content: center;
 }
-.card{
-    width: 25rem;
+
+.card {
+    width: 18rem;
     padding: 0.5rem;
     margin: 1rem 0rem 1.5rem 0rem;
     text-align: center;
@@ -65,20 +71,82 @@ a:link{
 
 }
 
-.card img{
+.cardsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card:hover {
+    transform: scale(1.02);
+
+}
+
+.card img {
     background-color: #E9ECEF;
     width: 12rem;
     height: 12rem;
     margin-bottom: 2rem;
 }
 
-.card p{
+.card p {
     background-color: #E9ECEF;
     color: black;
     font-size: medium;
 }
 
-.tituloCard{
+.tituloCard {
     height: 5rem;
     background-color: #E9ECEF;
+}
+
+
+
+.boton {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    width: 5rem;
+}
+
+.itemDetailContainer {
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+
+}
+
+.itemDetail {
+    gap:1rem;
+    font-weight: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    box-shadow: 10px 10px 21px -5px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 10px 10px 21px -5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 21px -5px rgba(0, 0, 0, 0.75);
+    border: 0.5px solid rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+    box-shadow: black;
+    padding-top: 2rem;
+    margin: 2rem;
+    width: 40vw;
+    height: 75vh;
+    overflow: hidden;
+    img{
+        max-width: 20rem;
+        max-height: 15rem;
+    }
+}
+
+.specs{
+    background-color: #183642;
+    overflow: hidden;
+    text-align: center;
+}
+
+.specs>p{
+    color: whitesmoke;
+    font-size: .83rem;
+    font-weight: 600;
 }

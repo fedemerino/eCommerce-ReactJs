@@ -5,7 +5,7 @@ const footer = () => {
         <>
             <footer className="footer">
                 <p>
-                    ...
+                    Insumax 2022
                 </p>
             </footer>
         </>

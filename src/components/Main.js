@@ -2,6 +2,7 @@ import React from 'react'
 import { Route, Routes } from "react-router-dom"
 import ItemListContainer from './ItemListContainer'
 import ItemDetailContainer from './ItemDetailContainer'
+import CarritoContainer from './CarritoContainer'
 const Main = () => {
     return (
         <main>
@@ -15,13 +16,10 @@ const Main = () => {
 
                 <Route path="/item/:id" element={<ItemDetailContainer />} />
 
-                <Route path="productos/item/:id" element={<ItemDetailContainer />} />
+                <Route path="/carrito" element={<CarritoContainer />} />
 
-                <Route path="categoria/placa/item/:id" element={<ItemDetailContainer />} />
+                <Route path="*" element={<p>404</p>} />
 
-                <Route path="categoria/procesador/item/:id" element={<ItemDetailContainer />} />
-
-                <Route path="/carrito" element={<p>El carrito está vacío</p>} />
             </Routes>
         </main>
     )

@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# Proyecto e-commerce ReactJs
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Descripción
 
-## Available Scripts
+El proyecto se creó con el comando [Create React App](https://github.com/facebook/create-react-app). Se implementan las tecnologías y técnicas aprendidas durante el curso de ReactJs de Coderhouse para realizar una SPA (Single-Page Application) basada en un e-commerce de insumos para computadoras.
 
-In the project directory, you can run:
+## Tecnologías usadas
 
-### `npm start`
+![HTML5](https://camo.githubusercontent.com/b9fe9f8e52c6fd30d814c24f3eb71cb09d7f5bc82d7f67a384055de93fdbb0bf/68747470733a2f2f696d672e69636f6e73382e636f6d2f636f6c6f722f34382f3030303030302f68746d6c2d352d2d76312e706e67)![CSS3](https://camo.githubusercontent.com/dc75aee770dff630309493116eeebd6a39c7042e4e94780a5e6c8f107bebe76f/68747470733a2f2f696d672e69636f6e73382e636f6d2f636f6c6f722f34382f3030303030302f637373332e706e67)![SASS](https://www.shareicon.net/data/48x48/2015/08/31/93776_sass_512x512.png)![JS](https://camo.githubusercontent.com/84c2586aa67309f6fa224fdf5fdf33a633239375397a8e753ac1e7cc727f5458/68747470733a2f2f696d672e69636f6e73382e636f6d2f636f6c6f722f34382f3030303030302f6a6176617363726970742d2d76312e706e67)![React](https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-42.png)![Firebase](https://cdn4.iconfinder.com/data/icons/google-i-o-2016/512/google_firebase-42.png)![ReactRouter](https://i.imgur.com/5jC6r7J.png)![ReactIcons](https://i.imgur.com/AqEu3fc.png)![Bootstrap](https://i.imgur.com/pfDP1s7.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Librerías / Dependencias
+```
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "bootstrap": "^5.2.2",
+    "firebase": "^9.14.0",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.5.0",
+    "react-dom": "^18.2.0",
+    "react-icons": "^4.6.0",
+    "react-router-dom": "^6.4.3",
+    "react-scripts": "^5.0.1",
+    "react-toastify": "^9.1.1",
+    "sass": "^1.55.0",
+    "web-vitals": "^2.1.4"
+```
+* `Bootstrap` > Se utilizó el sistema de grillas para la maquetación del sitio.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* `React Router` > Se utilizó para configurar las rutas y la navegabilidad del sitio. 
 
-### `npm test`
+* `React Icons` > Se utilizaron los iconos que provee esta librería para la maquetación del sitio.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* `Firebase` > Se utilizó [Firebase Cloud Firestore](https://firebase.google.com/) para almacenar los productos y las órdenes de compra.
 
-### `npm run build`
+* `React-Toastify` > Se utilizaron alertas personalizadas para mejorar la experiencia del usuario al interactuar con la app.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Instalación / Uso
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Para utilizar la aplicación puedes descargar los archivos desde el repositorio o bien puede clonarlo con el siguiente comando en la terminal.
+```
+> git clone https://github.com/fedemerino/react.git
+```
+2. Luego se debe correr el siguiente comando para instalar las librerías y dependencias del proyecto.
+```
+> npm install
+```
+3. Levantar la app con el comando
+```
+> npm start
+```
+En caso de que el sitio no se abra automaticamente, puedes abrir [http://localhost:3000](http://localhost:3000) para verlo en tu navegador.

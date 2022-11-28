@@ -17,7 +17,6 @@ const IdContainer = ({ id }) => {
             <p className='idText'>Compra realizada con éxito. ID:</p>
             <p>{id}        <BiCopy onClick={handleCopy} /></p>
             <p className='idText'>Recibirá un correo con su ID y los detalles de su compra</p>
-
         </div>
     )
 }

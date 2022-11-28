@@ -32,7 +32,7 @@ const ItemPlaca = ({ itemFiltrado }) => {
           <p></p>
         </div>
       </div>
-      <button className='boton' onClick={()=>agregarAlCarrito(ContextValue, itemFiltrado)}>Agregar al carrito</button>
+      <button className='buttonCounter' onClick={()=>agregarAlCarrito(ContextValue, itemFiltrado)}>Agregar al carrito</button>
     </div>
   )
 }

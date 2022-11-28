@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom"
 import ItemListContainer from './ItemListContainer'
 import ItemDetailContainer from './ItemDetailContainer'
 import CarritoContainer from './CarritoContainer'
+import Error404 from './Error404'
 const Main = () => {
     return (
         <main>
@@ -18,7 +19,7 @@ const Main = () => {
 
                 <Route path="/carrito" element={<CarritoContainer />} />
 
-                <Route path="*" element={<p>404</p>} />
+                <Route path="*" element={<Error404 />} />
 
             </Routes>
         </main>

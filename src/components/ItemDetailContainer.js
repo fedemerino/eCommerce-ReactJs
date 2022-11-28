@@ -17,10 +17,9 @@ const ItemDetailContainer = () => {
 
         consulta.then((res) => {
             const productos = res.docs.map(doc => ({ ...doc.data(), id: doc.id }))
-            console.log(productos)
             setItems(productos)
           })
-          consulta.catch((error) => (console.log(error)))
+          consulta.catch((error) => (toast.error(error)))
 },[id])
 
     return (

@@ -1,6 +1,21 @@
 .text {
     text-align: center;
-    font-weight: 300;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.buttonCounter{
+    padding: 0.1rem;
+    background-color: #183642;
+    color: whitesmoke;
+    border: 0px;
+    border-radius: 8%;
 }
 
 * {
@@ -10,13 +25,13 @@
     padding: 0;
     box-sizing: border-box;
     list-style-type: none;
-    overflow-y: hidden;
     overflow-x: hidden;
 }
 
 .flex{
     display: flex;
 }
+
 
 .itemCounter{
     text-align: center;
@@ -29,6 +44,7 @@
 }
 
 main {
+    min-height: 67vh;
     align-items: center;
     text-align: center;
 }
@@ -76,6 +92,79 @@ a:link {
     justify-content: center;
 }
 
+.mt-1{
+    margin-top: 1rem;
+}
+.cartContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.idContainer{
+    width: fit-content;
+    height: fit-content;
+    padding: 1rem;
+    border-radius: 6%;
+    background-color: rgba(255, 192, 203, 0.653);
+}
+
+
+.idText{   
+    font-weight: 100;
+}
+.totalPrice{
+    padding-top: 1rem;
+    background-color: #E9ECEF;
+    text-align: center;
+    height: 10rem;
+    button{
+        padding: 0.5rem;
+    }
+}
+
+
+.leftDivider{
+    border-left: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.carritoCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    padding: 0.5rem;
+    width: 20rem;
+    border: 1px solid black;
+    margin-bottom: 0.2rem;
+    
+    img{
+        height: 6rem;
+        width: 6rem;
+    }
+}
+
+.cardQuantity{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    button{
+        height: 2rem;
+        width: 2rem;
+    }
+    input{
+        width: 2rem;
+        margin: 0 1rem 0 1rem;
+    }
+}
+
 .card {
     width: 18rem;
     padding: 0.5rem;
@@ -100,7 +189,6 @@ a:link {
 
 .card:hover {
     transform: scale(1.02);
-
 }
 
 .card img {
@@ -117,6 +205,7 @@ a:link {
 }
 
 .tituloCard {
+    overflow: hidden;
     height: 5rem;
     background-color: #E9ECEF;
 }
@@ -157,15 +246,26 @@ a:link {
     border: 0.5px solid rgba(0, 0, 0, 0.5);
     border-radius: 3px;
     box-shadow: black;
-    padding-top: 2rem;
+    padding: 1rem 0 1rem 0;
     margin: 2rem;
     margin-bottom: 12vh;
-    width: 40vw;
+    width: 50vw;
     overflow: hidden;
     img{
-        max-width: 20rem;
-        max-height: 15rem;
+        max-width: 15rem;
+        max-height: 10rem;
     }
+}
+
+.error404{
+    font-family: 'Courier New', Courier, monospace;
+    font-weight:600;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    height: 67vh;
 }
 
 .specs{

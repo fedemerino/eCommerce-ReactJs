@@ -8,11 +8,12 @@ export const agregarAlCarrito = (ContextValue, itemFiltrado) => {
 
     if (existe) {
       toast.error('¡Este producto ya se encuentra en el carrito!')
-      setTimeout(() => toast.dismiss(), 2000)
+      setTimeout(() => toast.dismiss(), 1800)
     }
     else {
       ContextValue.setCarrito(productos => [...productos, itemFiltrado])
       ContextValue.setTotal(cantidad => [cantidad + 1])
+      toast.success('¡Producto agregado al carrito!')
+      setTimeout(() => toast.dismiss(), 1800)
     }
-    console.log(ContextValue.productos)
   }

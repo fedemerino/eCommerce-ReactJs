@@ -6,9 +6,7 @@ import { agregarAlCarrito } from './utils'
 const ItemProcesador = ({ itemFiltrado }) => {
 
   const ContextValue = useContext(contexto)
-  const vaciarCarrito = () => {
-    ContextValue.vaciarCarrito()
-  }
+ 
   return (
     <div className='itemDetail'>
       <p>{itemFiltrado.prod}</p>
@@ -34,8 +32,8 @@ const ItemProcesador = ({ itemFiltrado }) => {
           <p></p>
         </div>
       </div>
-      <button className='boton' onClick={() => agregarAlCarrito(ContextValue, itemFiltrado)}>Agregar al carrito</button>
-      <button className='boton' onClick={vaciarCarrito}>vaciar al carrito</button>
+      <button className='buttonCounter' onClick={() => agregarAlCarrito(ContextValue, itemFiltrado)}>Agregar al carrito</button>
+      
     </div>
   )
 }
